@@ -39,8 +39,8 @@ jobs:
     with:
       node_version: "22"
       semantic_version: "23.0.7"
-      image_name_github_api: "ghcr.io/ivanovaleksey/zitadel"
-      image_name_github_login: "ghcr.io/ivanovaleksey/zitadel-login"
+      image_name_github_api: "ghcr.io/DigiExam/zitadel"
+      image_name_github_login: "ghcr.io/DigiExam/zitadel-login"
 
   release:
     uses: ./.github/workflows/release.yml
@@ -55,5 +55,5 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' }}
     with:
       semantic_version: "23.0.7"
-      image_name_github_api: "ghcr.io/ivanovaleksey/zitadel"
-      image_name_github_login: "ghcr.io/ivanovaleksey/zitadel-login"
+      image_name_github_api: "ghcr.io/DigiExam/zitadel"
+      image_name_github_login: "ghcr.io/DigiExam/zitadel-login"
